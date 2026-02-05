@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiendaSOAP - Panel de Servicios</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 40px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        p.subtitle {
+            color: #7f8c8d;
+            font-size: 1.1em;
+        }
+        /* Rejilla de tarjetas */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        /* Estilo de las tarjetas */
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-left: 5px solid #3498db; /* Color azul lateral */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+            /* Efecto al pasar el ratón */
+            .card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+                border-left-color: #2980b9;
+            }
+
+        .icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #34495e;
+        }
+
+        .card span {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #95a5a6;
+            background-color: #f0f2f5;
+            padding: 4px 10px;
+            border-radius: 20px;
+        }
+        /* Colores específicos para variedad */
+        .users {
+            border-left-color: #e74c3c;
+        }
+
+        .orders {
+            border-left-color: #27ae60;
+        }
+
+        .details {
+            border-left-color: #f1c40f;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🛒 TiendaSOAP</h1>
+            <p class="subtitle">Panel de acceso a los Servicios Web (ASMX)</p>
+        </header>
+
+        <div class="grid">
+            <a href="WsProductos.asmx" class="card">
+                <div class="icon">📦</div>
+                <h2>Productos</h2>
+                <span>WsProductos.asmx</span>
+            </a>
+
+            <a href="WsUsuarios.asmx" class="card users">
+                <div class="icon">👥</div>
+                <h2>Usuarios</h2>
+                <span>WsUsuarios.asmx</span>
+            </a>
+
+            <a href="WsPedidos.asmx" class="card orders">
+                <div class="icon">🛒</div>
+                <h2>Pedidos</h2>
+                <span>WsPedidos.asmx</span>
+            </a>
+
+            <a href="WsCategorias.asmx" class="card">
+                <div class="icon">🏷️</div>
+                <h2>Categorías</h2>
+                <span>WsCategorias.asmx</span>
+            </a>
+
+            <a href="WsDetallesPedidos.asmx" class="card details">
+                <div class="icon">📄</div>
+                <h2>Detalles Pedidos</h2>
+                <span>WsDetallesPedidos.asmx</span>
+            </a>
+
+            <a href="ConexionBaseDeDatos.asmx" class="card">
+                <div class="icon">🔌</div>
+                <h2>Conexión BD</h2>
+                <span>Conexion.asmx</span>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
