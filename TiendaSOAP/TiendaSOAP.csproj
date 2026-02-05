@@ -116,10 +116,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ConexionBaseDeDatos.asmx" />
-<<<<<<< HEAD
     <Content Include="index.html" />
-=======
->>>>>>> 500b9818004a701fedcf26ca92ce58ede93535c6
     <Content Include="usuarios.asmx" />
     <Content Include="Web.config" />
     <Content Include="WsCategorias.asmx" />
