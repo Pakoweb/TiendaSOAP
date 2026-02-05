@@ -4,8 +4,13 @@
 -- =============================================
 
 -- Crear la base de datos si no existe
+<<<<<<< HEAD
 CREATE DATABASE IF NOT EXISTS tiendasoap;
 USE tiendasoap;
+=======
+CREATE DATABASE IF NOT EXISTS TiendaDB;
+USE TiendaDB;
+>>>>>>> 500b9818004a701fedcf26ca92ce58ede93535c6
 
 -- =============================================
 -- Tabla: Usuarios
@@ -104,6 +109,7 @@ INSERT INTO Categorias (NombreCategoria) VALUES
 -- Insertar productos
 INSERT INTO Productos (Nombre, Descripcion, Precio, Stock, CategoriaID) VALUES
 -- Electrónica
+<<<<<<< HEAD
 ('Smartphone Samsung Galaxy S23', 'Smartphone Android de última generación, 128GB', 899.99, 10, 1),
 ('Auriculares Sony WH-1000XM5', 'Auriculares inalámbricos con cancelación de ruido', 349.99, 25, 1),
 ('iPad Air 5', 'Tablet Apple con chip M1, 64GB', 599.99, 15, 1),
@@ -130,6 +136,34 @@ INSERT INTO Productos (Nombre, Descripcion, Precio, Stock, CategoriaID) VALUES
 -- Juguetes
 ('Juego de Mesa Catan', 'Juego de estrategia y comercio para familias', 42.00, 30, 6),
 ('Peluche Oso Gigante', 'Oso de peluche suave de 100cm', 32.99, 15, 6);
+=======
+('Laptop HP 15', 'Laptop HP 15 pulgadas, 8GB RAM, 256GB SSD', 599.99, 15, 1),
+('Mouse Logitech', 'Mouse inalámbrico Logitech M185', 19.99, 50, 1),
+('Teclado Mecánico', 'Teclado mecánico RGB retroiluminado', 79.99, 25, 1),
+('Monitor Samsung 24"', 'Monitor LED Full HD 24 pulgadas', 159.99, 10, 1),
+
+-- Ropa
+('Camiseta Nike', 'Camiseta deportiva Nike Dri-FIT', 29.99, 100, 2),
+('Pantalón Vaquero Levi''s', 'Pantalón vaquero Levi''s 501 Original', 69.99, 40, 2),
+('Zapatillas Adidas', 'Zapatillas running Adidas Ultraboost', 149.99, 30, 2),
+
+-- Hogar
+('Cafetera Nespresso', 'Cafetera de cápsulas Nespresso', 129.99, 20, 3),
+('Aspiradora Dyson', 'Aspiradora sin cable Dyson V11', 399.99, 8, 3),
+('Sartén Tefal', 'Sartén antiadherente Tefal 28cm', 34.99, 45, 3),
+
+-- Deportes
+('Balón Fútbol Nike', 'Balón de fútbol Nike Premier League', 24.99, 60, 4),
+('Raqueta Tenis Wilson', 'Raqueta de tenis Wilson Pro Staff', 189.99, 12, 4),
+
+-- Libros
+('El Quijote', 'Don Quijote de la Mancha - Edición completa', 19.99, 35, 5),
+('Cien Años de Soledad', 'Gabriel García Márquez', 14.99, 50, 5),
+
+-- Juguetes
+('LEGO Star Wars', 'Set LEGO Star Wars Millennium Falcon', 159.99, 18, 6),
+('Muñeca Barbie', 'Barbie Fashionista', 24.99, 40, 6);
+>>>>>>> 500b9818004a701fedcf26ca92ce58ede93535c6
 
 -- Insertar pedidos de prueba
 INSERT INTO Pedidos (UsuarioID, Estado) VALUES
@@ -141,6 +175,7 @@ INSERT INTO Pedidos (UsuarioID, Estado) VALUES
 -- Insertar detalles de pedidos
 INSERT INTO DetallePedidos (PedidoID, ProductoID, Cantidad, PrecioUnitario) VALUES
 -- Pedido 1 (Juan Pérez - Entregado)
+<<<<<<< HEAD
 (1, 1, 1, 899.99),
 (1, 2, 1, 349.99),
 (1, 3, 1, 599.99),
@@ -156,6 +191,23 @@ INSERT INTO DetallePedidos (PedidoID, ProductoID, Cantidad, PrecioUnitario) VALU
 -- Pedido 4 (Luis Rodríguez - Pendiente)
 (4, 15, 1, 42.00),
 (4, 11, 1, 29.99);
+=======
+(1, 1, 1, 599.99),
+(1, 2, 1, 19.99),
+(1, 3, 1, 79.99),
+
+-- Pedido 2 (Juan Pérez - Pendiente)
+(2, 5, 2, 29.99),
+(2, 7, 1, 149.99),
+
+-- Pedido 3 (María García - Enviado)
+(3, 8, 1, 129.99),
+(3, 13, 1, 19.99),
+
+-- Pedido 4 (Luis Rodríguez - Pendiente)
+(4, 15, 1, 159.99),
+(4, 11, 1, 24.99);
+>>>>>>> 500b9818004a701fedcf26ca92ce58ede93535c6
 
 -- =============================================
 -- Verificación de datos
