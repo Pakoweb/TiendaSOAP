@@ -1,0 +1,15 @@
+c:\xampp\htdocs\TiendaSOAP\gestion-ra\src\main\java\com\gestionra\controller\CriterioController.java
+c:\xampp\htdocs\TiendaSOAP\gestion-ra\src\main\java\com\gestionra\controller\MateriaController.java
+c:\xampp\htdocs\TiendaSOAP\gestion-ra\src\main\java\com\gestionra\controller\RaController.java
+c:\xampp\htdocs\TiendaSOAP\gestion-ra\src\main\java\com\gestionra\exception\GlobalExceptionHandler.java
+c:\xampp\htdocs\TiendaSOAP\gestion-ra\src\main\java\com\gestionra\exception\ResourceNotFoundException.java
+c:\xampp\htdocs\TiendaSOAP\gestion-ra\src\main\java\com\gestionra\GestionRaApplication.java
+c:\xampp\htdocs\TiendaSOAP\gestion-ra\src\main\java\com\gestionra\model\Criterio.java
+c:\xampp\htdocs\TiendaSOAP\gestion-ra\src\main\java\com\gestionra\model\Materia.java
+c:\xampp\htdocs\TiendaSOAP\gestion-ra\src\main\java\com\gestionra\model\Ra.java
+c:\xampp\htdocs\TiendaSOAP\gestion-ra\src\main\java\com\gestionra\repository\CriterioRepository.java
+c:\xampp\htdocs\TiendaSOAP\gestion-ra\src\main\java\com\gestionra\repository\MateriaRepository.java
+c:\xampp\htdocs\TiendaSOAP\gestion-ra\src\main\java\com\gestionra\repository\RaRepository.java
+c:\xampp\htdocs\TiendaSOAP\gestion-ra\src\main\java\com\gestionra\service\CriterioService.java
+c:\xampp\htdocs\TiendaSOAP\gestion-ra\src\main\java\com\gestionra\service\MateriaService.java
+c:\xampp\htdocs\TiendaSOAP\gestion-ra\src\main\java\com\gestionra\service\RaService.java
